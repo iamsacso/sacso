@@ -319,6 +319,58 @@ ul {
   color: #06140e;
 }
 
+/* Important official links */
+.important-links {
+  margin-bottom: 2.5rem;
+}
+
+.important-title {
+  text-align: center;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.15rem;
+}
+
+.important-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.important-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.25rem 1.35rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.important-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(62, 207, 142, 0.4);
+}
+
+.important-label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.important-desc {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.important-action {
+  margin-top: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
 /* Inner pages */
 .page-hero {
   padding: 3.5rem 0 2rem;
@@ -460,7 +512,8 @@ ul {
     padding: 3rem 0 2.5rem;
   }
 
-  .craftland-grid {
+  .craftland-grid,
+  .important-grid {
     grid-template-columns: 1fr;
   }
 
@@ -484,13 +537,15 @@ ul {
   .btn,
   .social-card,
   .feature-card,
+  .important-card,
   .footer-social a {
     transition: none;
   }
 
   .btn:hover,
   .social-card:hover,
-  .feature-card:hover {
+  .feature-card:hover,
+  .important-card:hover {
     transform: none;
   }
 }
